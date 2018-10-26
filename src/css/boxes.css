@@ -1,0 +1,143 @@
+.big-box {
+  padding: 0;
+  margin: 50px 0;
+}
+
+.big-box.first {
+  text-align: right;
+  position: relative;
+  left: 4px;
+}
+
+.big-box.last {
+  position: relative;
+  left: -4px;
+  text-align: left;
+}
+
+.big-box#game-status .number {
+  font-size: 36px;
+}
+
+.big-box#player-box {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.big-box#player-box.tilted,
+.big-box#player-box.tilted-fixed {
+  transform: rotate(1.5deg);
+  transform-origin: bottom left;
+}
+
+.big-box#player-box input {
+  text-align: center;
+}
+
+.big-box .body {
+  margin-top: 20px;
+}
+
+.big-box .body p {
+  font-weight: 500;
+}
+
+.big-box#player-box .wait-msg,
+.big-box#player-box .almost-msg {
+  display: none;
+}
+
+.big-box#player-box.wait-message .wait-msg,
+.big-box#player-box.almost-message .almost-msg {
+  display: block;
+  position: relative;
+  top: 120px;
+}
+
+.big-box#player-box.buy-loader .body button,
+.big-box#player-box.buy-loader .body p.tickets-msg,
+.big-box#player-box.buy-loader .body input {
+  display: none;
+}
+
+.big-box#player-box.buy-loader .logo-ticket {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+.big-box#player-box.buy-loader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.big-box#player-box.buy-loader::after {
+  content: '';
+  position: absolute;
+  top: 85px;
+  left: 230px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 5px solid #eee;
+  border-top-color: #666;
+  animation: loading 2s linear infinite;
+}
+
+.big-box#player-box.bought {
+  transform: rotate(2.5deg) translateX(30px) translateY(5px);
+  transform-origin: bottom left;
+}
+
+.rubber-stamp {
+  display: none;
+  font-family: 'Vollkorn', serif;
+  font-size: 24px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #36f;
+  border: 5px solid #36f;
+  float: left;
+  padding: 0px 12px;
+  border-radius: 10px;
+  opacity: 0.8;
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  position: absolute;
+  top: 24px;
+  left: 347px;
+}
+
+.big-box#player-box.bought .rubber-stamp {
+  display: block;
+}
+
+.big-box#player-box.bought.bought-special .rubber-stamp {
+  display: none;
+}
+
+.big-box#player-box .coupon {
+  font-family: 'Impact';
+  text-transform: uppercase;
+  display: block;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+
+.big-box#player-box .coupon.big {
+  font-size: 46px;
+}

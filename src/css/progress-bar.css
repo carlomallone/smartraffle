@@ -1,0 +1,35 @@
+.progress-bar {
+  width: 100%;
+}
+
+.progress-bar .container {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.progress-bar .container span {
+  float: left;
+  margin-left: 10px;
+  line-height: 30px;
+  font-weight: 600;
+  color: black;
+}
+
+.progress-bar .container .filled {
+  background: #1D976C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 30px;
+  float: left;
+}
+
+.progress-bar .container .filled span {
+  float: right;
+  margin-right: 10px;
+  line-height: 30px;
+  font-weight: 600;
+  color: white;
+}

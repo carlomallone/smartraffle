@@ -1,0 +1,113 @@
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-tabs > li {
+  cursor: pointer;
+  border: 1px solid rgba(229, 59, 37, 0.5);
+  border-bottom: none;
+  border-right: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.nav-tabs > li:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+.nav-tabs > li:last-child {
+  border-radius: 0 4px 0 0;
+  border-right: 1px solid rgba(229, 59, 37, 0.5);
+}
+
+.nav-tabs > li label {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab-pane {
+  display: none;
+  padding: 0;
+  border: 1px solid #e53b25;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#tab-bets:checked ~ .tab-content > .content-bets,
+#tab-wins:checked ~ .tab-content > .content-wins,
+#tab-faqs:checked ~ .tab-content > .content-faqs,
+#tab-contract:checked ~ .tab-content > .content-contract {
+  display: block;
+}
+
+#tab-bets:checked ~ ul li:nth-child(1),
+#tab-wins:checked ~ ul li:nth-child(2),
+#tab-faqs:checked ~ ul li:nth-child(3),
+#tab-contract:checked ~ ul li:nth-child(4) {
+  background-color: #e53b25;
+  color: #FFFFFF;
+}
+
+.tab-content {
+  font-size: 14px;
+}
+
+.tab-content ul {
+  margin: 0;
+}
+
+.tab-content a {
+  color: #69f;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(229, 59, 37, 0.5);
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #e53b25;
+}
+
+td {
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid rgba(229, 59, 37, 0.5);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.tabs {
+  margin-top: 130px;
+}
+
+.faq {
+  margin: 40px 20px 60px;
+  line-height: 1.4;
+}
+
+.faq-q {
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #e53b25;
+  padding-bottom: 15px;
+}
+
+.faq-a {
+  margin-top: 15px;
+  font-weight: 400;
+}

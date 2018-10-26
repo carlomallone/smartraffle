@@ -1,0 +1,65 @@
+button {
+  height: 44px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #EEE;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.15s;
+  font-weight: 500;
+  width: 80px;
+}
+
+button:hover {
+  background-color: #DDD;
+}
+
+button:first-child {
+  margin-right: 10px;
+}
+
+button.primary {
+  color: #FAFAFA;
+  background-color: #87cc99;
+  font-size: 18px;
+  width: auto;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button.primary:hover {
+  background-color: #75cc99;
+}
+
+input {
+  font-size: 24px;
+  padding: 7px 20px 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tickets-msg {
+  text-align: center;
+  border: 4px solid gold;
+  background-color: rgba(251, 219, 101, 1);
+  margin: 0 auto 0 20px;
+  width: 100%;
+  font-family: 'Impact';
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+.tickets-msg span {
+  display: block;
+  line-height: 1;
+}
+
+.tickets-msg span.big {
+  font-size: 24px;
+}

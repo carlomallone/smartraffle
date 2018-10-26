@@ -1,0 +1,29 @@
+#information {
+  margin: 80px 0 0;
+  position: relative;
+}
+
+#information > div {
+  font-size: 16px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+#information > div > svg {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: #e53b25;
+}
+
+#information > div > span {
+  /*
+  display: block;
+  margin-bottom: 10px;
+  */
+  margin-right: 10px;
+  font-weight: 400;
+}

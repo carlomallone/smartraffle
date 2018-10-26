@@ -1,0 +1,270 @@
+@import 'css/pure-min.css';
+@import 'css/header.css';
+@import 'css/form.css';
+@import 'css/footer.css';
+@import 'css/hourglass.css';
+@import 'css/information.css';
+@import 'css/boxes.css';
+@import 'css/panels.css';
+@import 'css/progress-bar.css';
+@import 'css/tickets.css';
+
+/* PAGE */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+body,
+.pure-g [class*=pure-u] {
+  font-family: 'Exo 2', sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+
+code {
+  display: block;
+  margin: 20px 0 15px 0;
+  padding: 10px;
+  background: #eee;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-container.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.left-margin {
+  margin-left: 20px;
+}
+
+.right-margin {
+  margin-right: 20px;
+}
+
+#smart-raffle {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.app {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  transition: all 0.4s;
+  min-height: 100vh;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.app .container {
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+.app.loading {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app .loader {
+  position: absolute;
+  background: #e53b25;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #5d2a2a, #e53b25);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #5d2a2a, #e53b25); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1001;
+  display: none;
+  transition: all 0.5s;
+}
+
+.app .loader.whitish {
+  position: absolute;
+  background: #f7f7f7;
+  color: #333;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+
+.metamask-logo {
+  background-image: url("img/metamask.png");
+  width: 200px;
+  height: 220px;
+  display: block;
+  margin: 150px auto 100px;
+  background-size: cover;
+}
+
+.ropsten-switch {
+  background-image: url("img/ropsten.png");
+  width: 354px;
+  height: 152px;
+  display: block;
+  margin: 150px auto 100px;
+  background-size: cover;
+}
+
+.app .loader.transparent {
+  opacity: 0;
+}
+
+.app .loader.visible {
+  display: block
+}
+
+.flash.info {
+  position: absolute;
+  width: 100%;
+  margin: 30px auto 0;
+  letter-spacing: initial;
+  background: #9cf;
+  padding: 8px 20px;
+  border: 1px solid #039;
+  color: #039;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  transition: opacity 1s;
+  font-weight: 400;
+}
+
+.flash.info.gone {
+  opacity: 0;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.pure-button-primary {
+  background-color: #0c1a2b;
+}
+
+.pure-button-primary:hover {
+  background-color: #233e5e;
+}
+
+.pure-form input[type="text"]:focus {
+  border-color: #0c1a2b;
+}
+
+.accent {
+  font-weight: 700;
+}
+
+.highlight {
+  color: #e53b25;
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  1%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 400;
+}

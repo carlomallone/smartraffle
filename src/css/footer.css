@@ -1,0 +1,18 @@
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 150px;
+  background: #e53b25;
+  padding: 30px 0 20px;
+  color: #FAFAFA;
+  font-weight: 500;
+}
+
+.compact-logo {
+  background-image: url("../img/SMARTRAFFLE.png");
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 15px auto 0;
+  background-size: cover;
+}

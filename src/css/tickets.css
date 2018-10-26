@@ -1,0 +1,63 @@
+.logo-ticket {
+  color: #333;
+  backface-visibility: hidden;
+  /* transform: rotate(-7deg) translateY(20%) translateZ(0); */
+  display: inline-block;
+  padding: 15px 25px;
+  background-image:
+    radial-gradient( ellipse closest-side at 50%  50%, hsla(0, 0%, 100%, 0.125), transparent 90%),
+    radial-gradient( circle at 0    100%, transparent 14px, #e53b25 15px),
+    radial-gradient( circle at 100% 100%, transparent 14px, #e53b25 15px),
+    radial-gradient( circle at 100% 0, transparent 14px, #e53b25 15px),
+    radial-gradient( circle at 0    0, transparent 14px, #e53b25 15px);
+  background-position: center center, bottom left, bottom right, top right, top left;
+  background-size: cover, 51% 51%, 51% 51%, 51% 51%, 51% 51%;
+  background-repeat: no-repeat;
+  border-width: 0 4px;
+  border-color: transparent;
+  border-style: solid;
+  border-image: radial-gradient(cover circle, #e53b25 0%, #e53b25 50%, transparent 51%) 0 39% / 15px 4px repeat;
+  -webkit-filter: drop-shadow(hsla(0, 0%, 0%, 0.55) 1px 1px 2px);
+}
+
+.logo-ticket > div {
+  width: 460px;
+  height: 200px;
+  box-sizing: border-box;
+  position:relative;
+  border-color: #b70000;
+  border-style: solid;
+  border-width: 2px;
+  border-radius:5px;
+  text-align:center;
+  /* font: 2em/1 Impact;
+  text-transform:uppercase; */
+  padding: 0 50px;
+  font-stretch: extra-expanded;
+}
+
+.logo-ticket > div:before,
+.logo-ticket > div:after {
+  content: attr(data-number);
+  font: 1.4em/1 'Courier New';
+  position: absolute;
+  width: 198px;
+  line-height: 28px;
+  transform: rotate(90deg) translateZ(0) ;
+  transform-origin: 0% 0%;
+  text-align:center;
+  display: block;
+  top: 0;
+  border-color: #b70000;
+  border-style: solid;
+  border-width: 2px 0 0;
+}
+.logo-ticket > div:before {
+  left: 28px;
+}
+
+.logo-ticket > div:after {
+  transform-origin: 100% 0%;
+  right: 28px;
+  transform: rotate(-90deg) translateZ(0);
+}

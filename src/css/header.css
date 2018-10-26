@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  background-color: #e53b25;
+  color: #FAFAFA;
+}
+
+.navbar .container {
+  width: 1050px;
+  display: flex;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 36px;
+  margin-right: auto;
+}
+
+.logo svg {
+  font-size: 28px;
+  transform: rotate(-10deg);
+  margin: 0 15px;
+}
+
+.logo .network {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-left: 20px;
+  color: rgba(251, 219, 101, 1);
+  position: relative;
+  bottom: 7.5px;
+}
+
+#right-nav {
+  margin-left: auto;
+  text-transform: uppercase;
+  color: #FAFAFA;
+  width: auto;
+  padding-top: 5px;
+}
+
+#right-nav a {
+  color: #FAFAFA;
+  transition: all 0.2s;
+}
+
+#right-nav a:hover,
+#right-nav a:focus {
+  color: #CCC;
+  background-color: transparent;
+}
+
+#right-nav svg {
+  margin-right: 10px;
+}
